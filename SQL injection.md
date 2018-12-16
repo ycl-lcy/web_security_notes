@@ -2,9 +2,9 @@
 
 magic_quotes_gpc=on 跟 addslashes() 的區別在於前者只會在執行SQL時對`'` `"` `\` `NULL`加上`\`，並且前者從php 5.4開始預設為off
 
-addslash()有個漏洞
+addslash()有個漏洞 可以參考這篇 寫的很清楚
 http://shiflett.org/blog/2006/addslashes-versus-mysql-real-escape-string
-但這漏洞的條件是server那邊要把client的編碼設成GBK想要安全的使用addslash 可以參考 
+但這漏洞的條件是server那邊要把client的編碼設成GBK想要安全的使用addslash
 想要安全的使用addslash 可以參考 http://www.t086.com/article/5027 最下面
 
 mysql_real_escape_string貌似也有類似的漏洞 但沒搞懂 ~~也懶得搞懂~~
