@@ -3,7 +3,7 @@
 CSP就是為了防止瀏覽器去跑惡意的js而設下的規則，只能執行符合特定條件的js
 
 
-Content-Security-Policy: default-src 'self '; script-src http://127.0.0.1/static/ 
+`Content-Security-Policy: default-src 'self '; script-src http://127.0.0.1/static/ `
 如果static裡面有個可控的302 php，那麼就可以跳轉到放著我們想要執行的js的頁面
 
 對於那些根據input來執行的js(並且這個js會引發xss)來說 CSP是沒有作用的
