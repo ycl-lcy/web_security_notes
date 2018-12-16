@@ -11,7 +11,9 @@ CSP就是為了防止瀏覽器去跑惡意的js而設下的規則，只能執行
 `script-src *` ，預設還是會擋掉 inline script
 
 `Content-Security-Policy: default-src 'self '; script-src 'self' 'unsafe-inline'`
-這是最普遍的規則 unsafe-inline代表可以跑`<script>blablabla</script>`
+這是最普遍的規則 
+</br>
+unsafe-inline代表可以跑`<script>blablabla</script>`
 </br>
 可以利用`<script>在dom上append一些元素 ex: img style(有src屬性的) 或是link prefetch</script>` 來把你想傳出的資料(cookie)送出去
 除此之外也可以用跳轉頁面的方式 以及jsonp和CORS(後者沒看懂 也沒試過)
