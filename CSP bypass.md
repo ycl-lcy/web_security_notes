@@ -43,7 +43,7 @@ Reference的第二篇有介紹如何在沒有require.js的狀況下利用firefox
 這篇也是在講怎麼bypass nonce＆strict-dynamic
 http://sirdarckcat.blogspot.com/2016/12/how-to-bypass-csp-nonces-with-dom-xss.html
 
-總而言之，用黑名單會比白名單穩一些
+總而言之，用黑名單會比白名單穩一些 --待商榷--
 
 Reference: 
 https://itw01.com/QY8WSEN.html, https://www.anquanke.com/post/id/146180
