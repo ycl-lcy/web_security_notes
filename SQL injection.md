@@ -18,19 +18,7 @@ mysql_real_escape_string貌似也有類似的漏洞 但沒搞懂 ~~也懶得搞�
 
 接下來列出幾種繞過的方法
 
-以下是htmlspecialchars()的轉換表
-```
-& （和号）成为 &amp;
-" （双引号）成为 &quot;
-' （单引号）成为 '
-< （小于）成为 &lt;
-> （大于）成为 &gt;
-```
-
-可以注意到單引號並沒有被轉義
-
 </br>
-
 
 有的時候可以用類似這種形式
 ```http://localhost/injection/user.php?username=CHAR(97,100, 109, 105, 110, 35)```
